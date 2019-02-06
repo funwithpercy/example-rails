@@ -8,8 +8,8 @@ jobs:
     steps:
       - checkout
 
-      - restore_cache:
-          key: v1-phantomjs-2.1.1
+      # - restore_cache:
+      #     key: v1-phantomjs-2.1.1
 
       - run:
           name: Install phantomjs
