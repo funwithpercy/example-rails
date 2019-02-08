@@ -38,3 +38,6 @@ end
 ActiveRecord::Base.shared_connection = ActiveRecord::Base.connection
 
 DatabaseCleaner.strategy = :truncation, { pre_count: true, reset_ids: false }
+
+Percy::Capybara.initialize_build
+MiniTest.after_run { Percy::Capybara.finalize_build }

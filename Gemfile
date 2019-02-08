@@ -11,6 +11,7 @@ gem 'coffee-rails'
 gem "jquery-rails"
 gem 'turbolinks', github: 'rails/turbolinks'
 gem 'puma'
+gem 'percy-capybara'
 
 group :test do
   gem 'capybara'
